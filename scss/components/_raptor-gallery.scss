@@ -1,0 +1,134 @@
+.raptor-gallery {
+    max-height: 904px;
+    height: auto;
+
+    @media (max-width: 1200px) {
+        max-height: 600px;
+    }
+
+    @media (max-width: 960px) {
+        height: auto;
+        max-height: 600px;
+    }
+
+    @media (max-width: 768px) {
+        max-height: 450px;
+    }
+
+    @media (max-width: 576px) {
+        max-height: 266px;
+    }
+
+    background-color: #000;
+
+
+
+    &__slider {
+        height: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 12;
+        position: relative;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 3;
+            top: 0;
+            height: 100%;
+            width: 6%;
+            background-image: linear-gradient(to right, #000, transparent 90%);
+        }
+
+        &::after {
+            right: 0;
+            transform: rotate(180deg);
+        }
+
+        .swiper-slide {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100%;
+
+                @media (max-width: 960px) {
+                    object-fit: contain;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    &__control {
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        padding: 0 20px;
+        transform: translate(-50%, -50%);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 960px) {
+            width: 100%;
+            max-width: 880px;
+        }
+
+        @media (max-width: 880px) {}
+    }
+
+    &__btn {
+        width: 42px;
+        height: 42px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        @media (max-width: 960px) {
+            width: 30px;
+            height: 30px;
+        }
+
+        @media (max-width: 768px) {
+            width: 24px;
+            height: 24px;
+
+
+        }
+
+        &--next {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__pagination {
+        bottom: 60px !important;
+
+        @media (max-width: 960px) {
+            bottom: 46px !important;
+        }
+
+        @media (max-width: 768px) {
+            bottom: 30px !important;
+        }
+
+        .swiper-pagination-bullet {
+            width: 8px !important;
+            height: 8px !important;
+            margin: 0 10px !important;
+        }
+    }
+}

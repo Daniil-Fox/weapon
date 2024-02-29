@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="./libs/swiper.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <title>Высокоточное оружие. Разработано и сделано в России</title>
+</head>
+
+<body>
+    <div class="site-container">
+        <header class="header">
+            <div class="container header__container">
+                <div class="menu header__menu">
+                    <button class="header__burger" id="header-burger">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M31 13H1V11H31V13Z" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M31 21H1V19H31V21Z" fill="white" />
+                        </svg>
+                    </button>
+
+                    <div class="header__menu-main" id="menu-main">
+                        <button class="header__menu-exit" id="menu-exit">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M25.8996 27.3139L4.68637 6.10074L6.10059 4.68652L27.3138 25.8997L25.8996 27.3139Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.68606 25.8996L25.8993 4.68637L27.3135 6.10059L6.10027 27.3138L4.68606 25.8996Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+
+                        <div class="header__menu-block">
+                            <ul class="header__menu-list">
+                                <li class="header__menu-item">
+                                    <h3 class="header__menu-title">О компании</h3>
+                                    <ul class="header__menu-listLink">
+                                        <li class="header__menu-itemLink"> <a href="#">О нас</a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#">Конструкторское бюро</a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#">Производство</a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#">Патронная лаборатория</a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#">Новости</a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#">СМИ о нас</a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#">Материалы</a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#">Партнеры</a> </li>
+                                    </ul>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <h3 class="header__menu-title">Каталог</h3>
+                                    <ul class="header__menu-listLink">
+                                        <li class="header__menu-itemLink"> <a href="#"> Серия Raptor </a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#"> Серия Viper </a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#"> Серия Elegance </a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#"> Серия Phantom </a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#"> Серия Pilgrim </a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#"> Комплектация комплекса </a>
+                                        </li>
+                                        <li class="header__menu-itemLink"> <a href="#"> Аксессуары </a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#"> Патроны </a> </li>
+                                    </ul>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <h3 class="header__menu-title">Услуги</h3>
+                                    <ul class="header__menu-listLink">
+                                        <li class="header__menu-itemLink"> <a href="#"> Настройка и подготовка комплекса
+                                            </a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#"> Приемка оружия (тест-драйв) </a>
+                                        </li>
+                                        <li class="header__menu-itemLink"> <a href="#"> Подбор боеприпаса </a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#"> Сервис </a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#"> Оружие на заказ </a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#"> Подарочный сертификат </a> </li>
+                                        <li class="header__menu-itemLink"> <a href="#"> Где купить </a> </li>
+                                    </ul>
+                                </li>
+
+                                <li class="header__menu-item">
+                                    <h3 class="header__menu-title">Контакты</h3>
+
+                                    <address class="header__menu-address">Шоурум BespokeGun Москва, Малый Черкасский
+                                        пер., 1/3с1</address>
+                                    <a class="header__menu-phone" href="tel:+74951201888">+7 (495) 120-1-888</a>
+                                    <a class="header__menu-email"
+                                        href="mailto:info@bespokegun.ru">info@bespokegun.ru</a>
+                                    <div class="header__menu-social">
+                                        <span>Мы в социальных сетях:</span>
+                                        <ul class="header__menu-socialList">
+                                            <li class="header__menu-socialItem">
+                                                <svg width="18" height="11" viewBox="0 0 18 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M15.8444 7.1C17.3444 8.5 17.6444 9.1 17.6444 9.2C18.2444 10.1 17.0444 10.2 17.1444 10.1H14.7444C14.7444 10.1 14.2444 10.2 13.5444 9.7C12.6444 9.1 11.8444 7.5 11.1444 7.7C10.5444 8 10.5444 9.4 10.5444 9.4C10.5444 9.4 10.6444 9.7 10.4444 9.9C10.2444 10.1 9.94444 10.1 9.94444 10.1H8.84444C8.84444 10.1 6.44444 10.3 4.34444 8.1C2.04444 5.7 0.0444444 1 0.0444444 1C0.0444444 1 -0.0555556 0.6 0.0444444 0.5C0.144444 0.3 0.544444 0.3 0.544444 0.3H3.14444L3.54444 0.5C3.64444 0.6 3.74444 0.8 3.74444 0.8C3.74444 0.8 4.14444 1.8 4.74444 2.8C5.74444 4.7 6.24444 5.1 6.64444 4.9C7.24444 4.6 7.04445 2.3 7.04445 2.3C7.04445 2.3 7.04444 1.5 6.74444 1.1C6.54444 0.8 6.14444 0.7 5.94445 0.7C5.84445 0.7 6.04444 0.4 6.34444 0.2C6.74444 0 7.54445 0 8.54445 0C9.34445 0 9.54444 0 9.84444 0.1C10.7444 0.3 10.4444 1.1 10.4444 3.1C10.4444 3.7 10.2444 4.6 10.7444 4.9C10.9444 5.1 11.4444 4.9 12.6444 2.9C13.2444 1.9 13.6444 0.8 13.6444 0.8C13.6444 0.8 13.7444 0.6 13.8444 0.5C13.9444 0.4 14.1444 0.4 14.1444 0.4H16.8444C16.8444 0.4 17.6444 0.3 17.7444 0.7C17.8444 1.1 17.4444 2 16.3444 3.5C14.5444 5.9 14.3444 5.7 15.8444 7.1Z"
+                                                        fill="white" fill-opacity="0.5" />
+                                                </svg>
+                                            </li>
+
+                                            <li class="header__menu-socialItem">
+                                                <svg width="26" height="23" viewBox="0 0 26 23" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_d_124_1568)">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M20.84 0.649696L20.54 0.759696L4.38 6.5797C4.27 6.6197 4.17 6.6897 4.1 6.7897C4.03 6.8897 4 7.0097 4 7.12969C4.01 7.24969 4.05 7.35969 4.13 7.45969C4.21 7.5497 4.31 7.60969 4.43 7.6397L8.61 8.7897L9.39 11.0797L10.17 13.3697C10.21 13.4797 10.29 13.5797 10.38 13.6597C10.47 13.7397 10.58 13.7897 10.7 13.8197C10.82 13.8497 10.94 13.8397 11.06 13.8097C11.18 13.7797 11.28 13.7197 11.37 13.6397L13.53 11.5997L17.77 14.4797C18.29 14.8297 19.03 14.5697 19.16 13.9897L21.97 1.5697C22.11 0.939696 21.47 0.429696 20.84 0.649696ZM18.78 3.4097L11.48 9.37969L11.14 9.6597C11.06 9.7197 11.02 9.8097 11 9.8997L10.92 10.5297L10.71 12.3097C10.71 12.3297 10.71 12.3497 10.69 12.3697C10.68 12.3897 10.66 12.3997 10.63 12.3997C10.61 12.3997 10.59 12.3997 10.57 12.3797C10.55 12.3697 10.54 12.3497 10.54 12.3197L9.95 10.5397L9.34 8.7197C9.31 8.6397 9.32 8.5497 9.35 8.4697C9.38 8.3897 9.44 8.3197 9.52 8.2797L17.12 3.9297L18.55 3.1097C18.75 2.9997 18.96 3.2597 18.78 3.4097Z"
+                                                            fill="white" fill-opacity="0.5"
+                                                            shape-rendering="crispEdges" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_d_124_1568" x="0" y="0.597656"
+                                                            width="25.9893" height="22.0403"
+                                                            filterUnits="userSpaceOnUse"
+                                                            color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                                result="hardAlpha" />
+                                                            <feOffset dy="4" />
+                                                            <feGaussianBlur stdDeviation="2" />
+                                                            <feComposite in2="hardAlpha" operator="out" />
+                                                            <feColorMatrix type="matrix"
+                                                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                                            <feBlend mode="normal" in2="BackgroundImageFix"
+                                                                result="effect1_dropShadow_124_1568" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="effect1_dropShadow_124_1568" result="shape" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </li>
+
+                                            <li class="header__menu-socialItem">
+                                                <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M19 6.80039C19 6.20039 19 5.60039 18.9 4.80039C18.8 4.00039 18.8 3.40039 18.6 3.00039C18.4 2.10039 17.8 1.60039 16.9 1.30039C15.9 1.00039 13.4 0.900391 9.5 0.900391L8 1.00039C6.9 1.00039 5.7 1.00039 4.6 1.10039C3.4 1.20039 2.5 1.20039 2.1 1.40039C1.2 1.60039 0.7 2.20039 0.4 3.10039C0.0999996 4.10039 0 5.60039 0 7.70039V8.50039C0 9.20039 3.7998e-07 9.80039 0.1 10.5004C0.2 11.3004 0.2 11.9004 0.4 12.3004C0.6 13.2004 1.2 13.7004 2.1 14.0004C3.1 14.3004 5.6 14.4004 9.5 14.4004H11C12.1 14.4004 13.3 14.4004 14.4 14.3004C15.6 14.2004 16.5 14.2004 16.9 14.0004C17.8 13.8004 18.3 13.2004 18.5 12.3004C18.8 11.3004 18.9 9.80039 18.9 7.70039L19 6.80039ZM7.6 10.5004V4.80039L12.6 7.70039L7.6 10.5004Z"
+                                                        fill="white" fill-opacity="0.5" />
+                                                </svg>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="header__nav header__nav-first nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a class="header__nav-link" href="#" id="btn-catalog">Каталог</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#" id="btn-about">О компании</a>
+                            <div class="header__about" id="header-about">
+                                <ul class="header__about-list">
+                                    <li class="header__about-item"><a href="#about">О нас</a></li>
+                                    <li class="header__about-item"><a href="#">Конструкторское бюро</a></li>
+                                    <li class="header__about-item"><a href="#">Производство</a></li>
+                                    <li class="header__about-item"><a href="#">Патронная лаборатория</a></li>
+                                    <li class="header__about-item"><a href="#">Новости</a></li>
+                                    <li class="header__about-item"><a href="#">СМИ о нас</a></li>
+                                    <li class="header__about-item"><a href="#">Материалы</a></li>
+                                    <li class="header__about-item"><a href="#">Партнеры</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="#">Партнеры</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__logo">
+                    <a href="index.html"> <img src="assets/img/logo-bespoke.svg" alt="logo"> </a>
+                </div>
+
+                <nav class="header__nav header__nav-second nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a class="header__nav-link" href="#">Услуги</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <a class="header__phone" href="tel:+74951201888">+7 (495) 120-1-888</a>
+
+                <div class="header__buttons">
+
+                    <button class="header__buttons-btn header-phone">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_42_6412)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.04668 1.72624L2.1228 3.65012C1.75153 4.02138 1.5625 4.43143 1.51528 4.94642C1.44471 5.84243 1.61392 6.87307 2.1237 8.23411L2.12462 8.23659C2.95017 10.4646 4.20294 12.5594 6.094 14.8359C8.37529 17.5652 11.1213 19.712 14.2481 21.2256C15.419 21.7828 16.8907 22.3915 18.4397 22.4911C18.5287 22.4963 18.6006 22.5 18.6632 22.5C19.3774 22.5 19.882 22.2819 20.3258 21.8092C20.6717 21.3974 21.0484 21.0318 21.3836 20.7065C21.4056 20.6851 21.4274 20.664 21.449 20.643L21.4529 20.6392C21.6942 20.4082 21.91 20.197 22.113 19.9796L22.1167 19.9756L22.1204 19.9717C22.354 19.7286 22.3891 19.5696 22.3897 19.4943C22.3902 19.4252 22.3631 19.2833 22.1465 19.0667L19.01 15.9354L19.0004 15.925C18.9362 15.8559 18.8637 15.7949 18.792 15.7541C18.7227 15.7146 18.6707 15.7032 18.6321 15.7032C18.5708 15.7032 18.4238 15.7347 18.2135 15.945L16.2701 17.8884C16.1606 17.998 15.7025 18.4567 14.9711 18.4567C14.6742 18.4567 14.3924 18.3811 14.1277 18.2453C14.1003 18.2314 14.0777 18.2185 14.0691 18.2136L14.0675 18.2127C14.0675 18.2126 14.0675 18.2127 14.0675 18.2127L14.0637 18.2108L12.7752 17.5079L12.7541 17.4946C10.8722 16.2994 9.17443 14.7538 7.57478 12.7809L7.57031 12.7754C6.67234 11.6462 6.07694 10.674 5.64481 9.6358L5.63967 9.62346L5.62996 9.59756C5.62563 9.5866 5.61793 9.5666 5.61016 9.54329C5.54445 9.34617 5.46267 9.04125 5.50662 8.68375C5.55292 8.30709 5.72864 7.94658 6.05061 7.6246L6.09264 7.58257L6.10969 7.56748C6.55041 7.17726 6.9538 6.76923 7.3995 6.3184C7.43437 6.28313 7.46949 6.2476 7.50492 6.2118L7.50775 6.20895C7.58564 6.13106 7.66391 6.05153 7.74465 5.96949L7.74563 5.96849C7.82534 5.8875 7.90749 5.80403 7.99 5.72151C8.23262 5.47889 8.25777 5.33174 8.25777 5.28215C8.25777 5.23256 8.23262 5.08541 7.99 4.84279L6.43724 3.29003C6.34898 3.19924 6.26048 3.10937 6.17044 3.01803L6.16935 3.01692C6.08018 2.92648 5.98945 2.83443 5.89968 2.74204C5.85249 2.69415 5.80613 2.64702 5.76044 2.60057C5.459 2.29409 5.18689 2.01744 4.89962 1.75161L4.88656 1.73953L4.87409 1.72684C4.67933 1.52866 4.53986 1.5 4.47562 1.5C4.39671 1.5 4.24408 1.5372 4.04668 1.72624ZM7.03645 9.07572C7.40212 9.94958 7.91461 10.798 8.74218 11.839C10.2471 13.6945 11.8192 15.1205 13.5374 16.2151L14.7619 16.883C14.7864 16.8957 14.8055 16.9067 14.8117 16.9103C14.8121 16.9105 14.8125 16.9108 14.8129 16.911C14.8889 16.9499 14.9375 16.9567 14.9711 16.9567C15.0134 16.9567 15.0536 16.9442 15.0979 16.918C15.145 16.8902 15.1808 16.8564 15.2134 16.8237L17.1528 14.8843C17.544 14.4931 18.0504 14.2032 18.6321 14.2032C19.3267 14.2032 19.8299 14.6173 20.089 14.8931L23.2067 18.0056C23.6124 18.4113 23.8942 18.918 23.8896 19.5061C23.885 20.0863 23.603 20.5922 23.206 21.0069C22.9751 21.254 22.7364 21.487 22.4922 21.7208C22.4756 21.737 22.459 21.7531 22.4424 21.7692C22.0912 22.1103 21.7611 22.4308 21.4634 22.7871L21.4509 22.802L21.4377 22.8162C20.6918 23.6205 19.7782 24 18.6632 24C18.55 24 18.4359 23.9934 18.3495 23.9883L18.3457 23.9881C16.4945 23.8696 14.8047 23.1517 13.6013 22.579L13.5969 22.5769C10.2742 20.9689 7.35858 18.688 4.94244 15.7971L4.94101 15.7954C2.96445 13.4161 1.61443 11.1764 0.718508 8.75895C0.161175 7.27056 -0.0741784 6.01064 0.0203321 4.82335L0.0209599 4.81547C0.0987848 3.95291 0.438703 3.21289 1.06214 2.58946L2.9958 0.655788L3.00054 0.651219C3.40259 0.263027 3.91209 0 4.47562 0C5.03768 0 5.53632 0.26607 5.93064 0.662003C6.24137 0.950242 6.53669 1.25057 6.8323 1.55119C6.87815 1.59782 6.92401 1.64446 6.96994 1.69106L6.97372 1.6949C7.05964 1.78335 7.14715 1.87216 7.23756 1.96386L7.24025 1.9666C7.328 2.05561 7.4184 2.14731 7.5091 2.24056L9.05066 3.78213C9.45104 4.18251 9.75777 4.68873 9.75777 5.28215C9.75777 5.87557 9.45104 6.38179 9.05066 6.78218C8.97276 6.86007 8.8945 6.93959 8.81376 7.02164L8.81297 7.02244C8.73367 7.10302 8.65195 7.18606 8.56985 7.26817C8.53315 7.30526 8.49649 7.34236 8.45983 7.37945C8.0265 7.81786 7.59437 8.25507 7.12131 8.67523L7.11127 8.68526C7.05312 8.74342 7.02607 8.7864 7.01331 8.81158C7.00109 8.8357 6.99711 8.85297 6.99541 8.86675C6.99154 8.89828 6.99492 8.95097 7.02921 9.05686C7.03111 9.06168 7.03361 9.06812 7.03645 9.07572Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_42_6412">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+
+                    <button class="header__buttons-btn btn-profile" id="btn-profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.3767 15.6977C22.5586 14.269 24 11.8028 24 9C24 4.58172 20.4183 1 16 1C11.5817 1 8 4.58172 8 9C8 11.8028 9.44138 14.269 11.6233 15.6977C6.03481 17.5353 2 22.7965 2 29V31H30V29C30 22.7965 25.9652 17.5353 20.3767 15.6977ZM16 15C19.3137 15 22 12.3137 22 9C22 5.68629 19.3137 3 16 3C12.6863 3 10 5.68629 10 9C10 12.3137 12.6863 15 16 15ZM16 17C10.054 17 5.11807 21.3246 4.16592 27C4.0568 27.6504 4 28.3186 4 29H28C28 28.3186 27.9432 27.6504 27.8341 27C26.8819 21.3246 21.946 17 16 17Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+
+                    <button class="header__buttons-btn" id="btn-search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.8318 27.7797C25.2268 27.7797 31.2217 21.7848 31.2217 14.3898C31.2217 6.99484 25.2268 1 17.8318 1C10.4368 1 4.44199 6.99484 4.44199 14.3898C4.44199 17.5261 5.52028 20.4106 7.32635 22.6927L0 29.205L1.32873 30.6998L8.68077 24.1647C11.0748 26.4068 14.293 27.7797 17.8318 27.7797ZM29.2217 14.3898C29.2217 20.6803 24.1223 25.7797 17.8318 25.7797C11.5414 25.7797 6.44199 20.6803 6.44199 14.3898C6.44199 8.09941 11.5414 3 17.8318 3C24.1223 3 29.2217 8.09941 29.2217 14.3898Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="header__catalog">
+                <div class="container header__catalog-container">
+                    <ul class="header__catalog-list">
+
+                        <li class="header__catalog-item">
+                            <div class="header__catalog-block">
+                                <img src="assets/img/about-1.png" alt="gun">
+                            </div>
+
+                            <a href="#">RAPTOR</a>
+                        </li>
+                        <li class="header__catalog-item">
+                            <div class="header__catalog-block">
+                                <img src="assets/img/about-2.png" alt="gun">
+                            </div>
+
+                            <a href="#">elegance</a>
+                        </li>
+                        <li class="header__catalog-item">
+                            <div class="header__catalog-block">
+                                <img src="assets/img/about-3.png" alt="gun">
+                            </div>
+
+                            <a href="#">piligrim</a>
+                        </li>
+                        <li class="header__catalog-item">
+                            <div class="header__catalog-block">
+                                <img src="assets/img/about-4.png" alt="gun">
+                            </div>
+
+                            <a href="#">Phantom</a>
+                        </li>
+                        <li class="header__catalog-item">
+                            <div class="header__catalog-block">
+                                <img src="assets/img/about-5.png" alt="gun">
+                            </div>
+
+                            <a href="#">viper</a>
+                        </li>
+
+                        <li class="header__catalog-item">
+                            <div class="header__catalog-last">
+                                <img src="assets/img/about-6.png" alt="gun">
+                            </div>
+
+                            <a href="#">аксессуары</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header__search">
+                <form class="header__search-form" action="#">
+                    <input class="header__search-input" placeholder="Поиск" type="text" id="search-input">
+                    <button class="header__search-btn">Найти</button>
+                </form>
+            </div>
+
+            <div class="modal-overlay">
+                <div class="header__authorization">
+                    <div class="header__authorization-btns">
+                        <button class="header__authorization-btn">Войти</button>
+                        <button class="header__authorization-btn">Зарегистрироваться</button>
+                    </div>
+
+                    <h3 class="header__authorization-title">Введите ваш логин и пароль</h3>
+
+                    <form class="header__authorization-form" action="#">
+                        <input class="header__authorization-input" type="text" placeholder="Логин">
+                        <input class="header__authorization-input" type="text" placeholder="Пароль">
+                        <button class="header__authorization-enter">Войти</button>
+                    </form>
+
+                    <div class="header__authorization-link">
+                        <span>Соглашаюсь с</span>
+                        <a href="#">политикой конфиденциальности.</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__basket">
+                <button class="header__basket-exit">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_64_2237)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M25.8996 27.3149L4.68637 6.10171L6.10059 4.6875L27.3138 25.9007L25.8996 27.3149Z"
+                                fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.68606 25.9006L25.8993 4.68735L27.3135 6.10156L6.10027 27.3148L4.68606 25.9006Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_64_2237">
+                                <rect width="32" height="32" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+
+                <div class="header__basket-first">
+                    <h4 class="header__basket-title">Ваш заказ</h4>
+                    <p class="header__basket-descr">Вы ничего не заказали</p>
+                </div>
+
+                <div class="header__basket-second">
+                    <h3 class="header__basket-title">Вас может заинтересовать</h3>
+                    <ul class="header__basket-list">
+
+                        <li class="header__basket-item">
+                            <div class="header__basket-img">
+                                <img src="assets/img/basket-1.png" alt="basket">
+                            </div>
+
+                            <div class="header__basket-block">
+                                <h4>
+                                    Raptor
+                                </h4>
+
+                                <p>Алюминиевая ложа со складным прикладом.</p>
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </li>
+
+                        <li class="header__basket-item">
+                            <div class="header__basket-img">
+                                <img src="assets/img/basket-2.png" alt="basket">
+                            </div>
+                            <div class="header__basket-block">
+                                <h4>Elegance</h4>
+                                <p>
+                                    Алюминиевая ложа со складным прикладом.
+                                </p>
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </li>
+
+                        <li class="header__basket-item">
+                            <div class="header__basket-img">
+                                <img src="assets/img/basket-3.png" alt="basket">
+                            </div>
+                            <div class="header__basket-block">
+                                <h4>Pilgrim</h4>
+                                <p>
+                                    Алюминиевая ложа со складным прикладом.
+                                </p>
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </li>
+
+                        <li class="header__basket-item">
+                            <div class="header__basket-img">
+                                <img src="assets/img/basket-4.png" alt="basket">
+                            </div>
+                            <div class="header__basket-block">
+                                <h4>Raptor</h4>
+                                <p>Алюминиевая ложа со складным прикладом.</p>
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="raptor-hero">
+                <div class="raptor-hero__cover"></div>
+                <div class="container my-container raptor-hero__container">
+                    <div class="raptor-hero__logo">
+                        <img src="./assets/img/logo.svg" alt="Raptor">
+                    </div>
+                    <div class="raptor-hero__content">
+                        <h2 class="raptor-hero__title">Raptor Tactical</h2>
+                        <p class="raptor-hero__desc">Стоимость: от 1.250.000 руб.</p>
+                        <button class="btn-reset raptor-hero__btn btn">получить консультацию</button>
+                    </div>
+                </div>
+
+                <h2 class="visually-hidden">title</h2>
+            </section>
+
+            <section class="raptor-slider">
+                <div class="container my-container">
+                    <div class="raptor-slider__wrapper">
+                        <div class="raptor-slider__control">
+                            <button class="raptor-slider__btn raptor-slider__btn--prev">
+                                <svg width="23" height="42" viewBox="0 0 23 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.6274 21.2132L1.41421 -2.90871e-05L0 1.41418L21.2132 22.6274L22.6274 21.2132Z"
+                                        fill="#808285" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.41439 42.4264L22.6276 21.2132L21.2134 19.799L0.000177622 41.0122L1.41439 42.4264Z"
+                                        fill="#808285" />
+                                </svg>
+                            </button>
+                            <button class="raptor-slider__btn raptor-slider__btn--next">
+                                <svg width="23" height="42" viewBox="0 0 23 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.6274 21.2132L1.41421 -2.90871e-05L0 1.41418L21.2132 22.6274L22.6274 21.2132Z"
+                                        fill="#808285" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.41439 42.4264L22.6276 21.2132L21.2134 19.799L0.000177622 41.0122L1.41439 42.4264Z"
+                                        fill="#808285" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="raptor-slider__slider swiper">
+
+
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="raptor-slider__slide">
+                                        <picture>
+                                            <source srcset="./assets/img/raptor-tactical-1400.png"
+                                                media="(min-width: 1400px)">
+                                            <source srcset="./assets/img/raptor-tactical-1000.png"
+                                                media="(min-width: 1000px)">
+                                            <img src="./assets/img/raptor-tactical-1400.png" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="raptor-slider__slide">
+                                        <picture>
+                                            <source srcset="./assets/img/raptor-tactical-1400.png"
+                                                media="(min-width: 1400px)">
+                                            <source srcset="./assets/img/raptor-tactical-1000.png"
+                                                media="(min-width: 1000px)">
+                                            <img src="./assets/img/raptor-tactical-1400.png" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="raptor-slider__slide">
+                                        <picture>
+                                            <source srcset="./assets/img/raptor-tactical-1400.png"
+                                                media="(min-width: 1400px)">
+                                            <source srcset="./assets/img/raptor-tactical-1000.png"
+                                                media="(min-width: 1000px)">
+                                            <img src="./assets/img/raptor-tactical-1400.png" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="raptor-slider__slide">
+                                        <picture>
+                                            <source srcset="./assets/img/raptor-tactical-1400.png"
+                                                media="(min-width: 1400px)">
+                                            <source srcset="./assets/img/raptor-tactical-1000.png"
+                                                media="(min-width: 1000px)">
+                                            <img src="./assets/img/raptor-tactical-1400.png" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="raptor-slider__slide">
+                                        <picture>
+                                            <source srcset="./assets/img/raptor-tactical-1400.png"
+                                                media="(min-width: 1400px)">
+                                            <source srcset="./assets/img/raptor-tactical-1000.png"
+                                                media="(min-width: 1000px)">
+                                            <img src="./assets/img/raptor-tactical-1400.png" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="raptor-slider__descript">
+                        <h4 class="raptor-slider__title">Raptor Tactical: Камуфляж</h4>
+                        <div class="raptor-slider__pagination swiper-pagination">
+                            <div class="raptor-slider__thumb">
+                                <img src="./assets/img/raptor-thumb-military.jpg" alt="">
+                            </div>
+                            <div class="raptor-slider__thumb">
+                                <div></div>
+                            </div>
+                            <div class="raptor-slider__thumb">
+                                <div></div>
+                            </div>
+                            <div class="raptor-slider__thumb">
+                                <div></div>
+                            </div>
+                            <div class="raptor-slider__thumb">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="chars">
+                <div class="chars__container container my-container">
+                    <article class="chars__item char">
+                        <h3 class="char__title">Особенности:</h3>
+                        <ul class="char__list">
+                            <li>Экстремальная кучность стрельбы.</li>
+                            <li>Стабильная работа на протяжении всего ресурса оружия.</li>
+                            <li>Пониженное усилие отдачи.</li>
+                            <li>Надежность работы винтовки в тяжелых климатических условиях и многократный запас
+                                прочности затворной группы.</li>
+                            <li>Спортивный спусковой механизм.</li>
+                        </ul>
+                    </article>
+                    <article class="chars__item char">
+                        <h3 class="char__title">Технические характеристики</h3>
+                        <ul>
+                            <li>Механизм запирания: продольно-скользящий поворотный затвор</li>
+                            <li>Перезарядка: ручная</li>
+                            <li>Магазин: отъемный коробчатый на 5 патронов</li>
+                            <li>Калибры: 338 LM, .300 NM </li>
+                            <li>Длина ствола: 26–28 дюймов </li>
+                            <li>Шаг нарезов: 9″, 9,5″ и 10″</li>
+                            <li>Эффективная дальность стрельбы: до 1850 м Вес (без прицела и сошек): 7,165 кг</li>
+                            <li>Общая длина с ДТК закрытого типа: 1445 мм</li>
+                        </ul>
+                    </article>
+                    <article class="chars__item char">
+                        <h3 class="char__title">Затворная группа</h3>
+                        <ul>
+                            <li>Длинная затворная группа (Long Action) с тремя боевыми упорами</li>
+                            <li>Повышенный запас прочности запирающего узла</li>
+                            <li>Плавный ход затвора и быстрая перезарядка</li>
+                            <li>Поворот рукоятки затвора на 60° упрощает процесс перезарядки и взведения </li>
+                            <li>Планки Пикатинни (стандарт MIL STD) для монтажа оптических прицелов</li>
+                        </ul>
+                    </article>
+                    <article class="chars__item char">
+                        <h3 class="char__title">Ложа</h3>
+                        <ul>
+                            <li>Разработана совместно со специалистами CNC GC</li>
+                            <li>Материал: высокопрочного алюминия, покрыта стойкой к внешнему воздействию оружейной
+                                краской</li>
+                            <li>Приклад: складывающийся</li>
+                            <li>Регулировка: щека/затылок (плоскости: вертикаль/горизонталь)</li>
+                        </ul>
+                    </article>
+                    <article class="chars__item char">
+                        <h3 class="char__title">Интерфейсы ложи</h3>
+                        <ul>
+                            <li>VLTOR KeyMod</li>
+                            <li>European Size Rails</li>
+                            <li>Arca-Swiss для установки на трипод</li>
+                            <li>Ось крепления сошек стандарта Versa-Pod</li>
+                            <li>В качестве дополнения может быть приобретен мост для крепления предобъективных устройств
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="chars__item char">
+                        <h3 class="char__title">Аксессуары</h3>
+                        <ul>
+                            <li>Упор под палец </li>
+                            <li>Две антабки под ремень</li>
+                            <li>Адаптер для крепления сошек Harris </li>
+                            <li>Планка Пикатинни для крепления сошек Atlas и Accu-tac</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="raptor-gallery">
+                <div class="raptor-gallery__slider swiper">
+                    <div class="raptor-gallery__control">
+                        <button class="raptor-gallery__btn raptor-gallery__btn--prev">
+                            <svg width="23" height="42" viewBox="0 0 23 42" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.372093 21.2133L21.5853 9.29832e-05L22.9995 1.41431L1.78631 22.6275L0.372093 21.2133Z"
+                                    fill="#808285" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M21.5851 42.4265L0.371919 21.2133L1.78613 19.7991L22.9993 41.0123L21.5851 42.4265Z"
+                                    fill="#808285" />
+                            </svg>
+                        </button>
+                        <button class="raptor-gallery__btn raptor-gallery__btn--next">
+                            <svg width="23" height="42" viewBox="0 0 23 42" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.372093 21.2133L21.5853 9.29832e-05L22.9995 1.41431L1.78631 22.6275L0.372093 21.2133Z"
+                                    fill="#808285" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M21.5851 42.4265L0.371919 21.2133L1.78613 19.7991L22.9993 41.0123L21.5851 42.4265Z"
+                                    fill="#808285" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="./assets/img/gallery/01-2x.png" media="(min-width: 1900px)">
+                                <source srcset="./assets/img/gallery/01.png">
+                                <img src="./assets/img/gallery/01.png" srcset="./assets/img/gallery/01-2x.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="./assets/img/gallery/01-2x.png" media="(min-width: 1900px)">
+                                <source srcset="./assets/img/gallery/01.png">
+                                <img src="./assets/img/gallery/01.png" srcset="./assets/img/gallery/01-2x.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="./assets/img/gallery/01-2x.png" media="(min-width: 1900px)">
+                                <source srcset="./assets/img/gallery/01.png">
+                                <img src="./assets/img/gallery/01.png" srcset="./assets/img/gallery/01-2x.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="./assets/img/gallery/01-2x.png" media="(min-width: 1900px)">
+                                <source srcset="./assets/img/gallery/01.png">
+                                <img src="./assets/img/gallery/01.png" srcset="./assets/img/gallery/01-2x.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="./assets/img/gallery/01-2x.png" media="(min-width: 1900px)">
+                                <source srcset="./assets/img/gallery/01.png">
+                                <img src="./assets/img/gallery/01.png" srcset="./assets/img/gallery/01-2x.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-pagination raptor-gallery__pagination"></div>
+                </div>
+            </section>
+
+            <section class="raptor-extra">
+                <div class="container my-container">
+                    <h2 class="raptor-extra__title">Дополнительные материалы</h2>
+                    <div class="raptor-extra__container">
+                        <div class="raptor-extra__left">
+                            <div class="raptor-extra__video">
+                                <picture>
+                                    <source srcset="./assets/img/raptor-video-2x.jpg" media="(min-width: 1900px)">
+                                    <source srcset="./assets/img/raptor-video.jpg">
+                                    <img src="./assets/img/raptor-video.jpg"
+                                        srcset="./assets/img/raptor-video-2x.jpg 2x" alt="raptor cover">
+                                </picture>
+                                <a href="#" class="raptor-extra__play">
+                                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M36.0007 71.1555C55.417 71.1555 71.157 55.4155 71.157 35.9993C71.157 16.583 55.417 0.843018 36.0007 0.843018C16.5845 0.843018 0.844482 16.583 0.844482 35.9993C0.844482 55.4155 16.5845 71.1555 36.0007 71.1555Z"
+                                            fill="#E51B23" />
+                                        <path
+                                            d="M28.5312 51.8227L53.3655 37.4845C53.6259 37.3339 53.842 37.1174 53.9923 36.8569C54.1426 36.5963 54.2217 36.3009 54.2217 36.0001C54.2217 35.6993 54.1426 35.4038 53.9923 35.1433C53.842 34.8827 53.6259 34.6663 53.3655 34.5157L28.5312 20.1759C28.2703 20.0265 27.9749 19.9482 27.6743 19.9487C27.3738 19.9492 27.0786 20.0286 26.8183 20.1788C26.5579 20.329 26.3415 20.5448 26.1907 20.8048C26.0398 21.0647 25.9598 21.3597 25.9585 21.6602V50.3376C25.9596 50.6382 26.0396 50.9333 26.1904 51.1933C26.3412 51.4534 26.5576 51.6693 26.8179 51.8196C27.0783 51.9699 27.3735 52.0493 27.6741 52.0499C27.9748 52.0504 28.2703 51.9721 28.5312 51.8227Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <h4 class="raptor-extra__subtitle">Что входит в стрелковый комплекс Raptor?</h4>
+                        </div>
+                        <div class="raptor-extra__right">
+                            <a href="#" class="raptor-extra__btn">Презентация Raptor Tactical (pdf)</a>
+                            <a href="#" class="raptor-extra__btn">Руководство по эксплуатации Raptor (pdf)</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__first">
+                    <h3 class="footer__first-title">Гарантия - 2 года
+                        30 дней на возврат</h3>
+
+                    <div class="footer__first-block">
+                        <span>Подписка на новости:</span>
+                        <button>Подписаться</button>
+                    </div>
+
+                    <p class="footer__first-descr">© 2023 BESPOKEGUN. Все права защищены, копирование любой информации
+                        запрещено.</p>
+                </div>
+
+                <div class="footer__second">
+                    <ul class="footer__second-list">
+                        <li class="footer__second-item">
+                            <h3 class="footer__second-title">О компании</h3>
+                            <ul class="footer__second-listOfLinks">
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">О нас</a>
+                                </li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link"
+                                        href="#">Конструкторское
+                                        бюро</a></li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link"
+                                        href="#">Производство</a>
+                                </li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">Патронная
+                                        лаборатория</a></li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">Новости</a>
+                                </li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">СМИ о
+                                        нас</a>
+                                </li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link"
+                                        href="#">Материалы</a>
+                                </li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">Партнеры</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="footer__second-item">
+                            <h3 class="footer__second-title">Каталог</h3>
+                            <ul class="footer__second-listOfLinks">
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">Серия
+                                        Raptor</a>
+                                </li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">Серия
+                                        Viper</a>
+                                </li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">Серия
+                                        Elegance</a></li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">Серия
+                                        Phantom</a></li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">Серия
+                                        Pilgrim</a></li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">Комплектация
+                                        комплекса</a></li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link"
+                                        href="#">Аксессуары</a>
+                                </li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">Патроны</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="footer__second-item">
+                            <h3 class="footer__second-title">Услуги</h3>
+                            <ul class="footer__second-listOfLinks">
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">Настройка и
+                                        подготовка комплекса</a></li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">Приемка
+                                        оружия
+                                        (тест-драйв)</a></li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">Подбор
+                                        боеприпаса</a></li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">Сервис</a>
+                                </li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">Оружие на
+                                        заказ</a></li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">Подарочный
+                                        сертификат</a></li>
+                                <li class="footer__second-itemLink"><a class="footer__second-link" href="#">Где
+                                        купить</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="footer__second-item">
+                            <h3 class="footer__second-title">Контакты</h3>
+                            <address class="footer__second-address">Шоурум BespokeGun Москва, Малый Черкасский пер.,
+                                1/3с1
+                            </address>
+                            <a class="footer__second-phone" href="tel:+74951201888">+7 (495) 120-1-888</a>
+                            <a class="footer__second-email" href="mailto:info@bespokegun.ru">info@bespokegun.ru</a>
+
+                            <div class="footer__second-block">
+                                <span>Мы в социальных сетях:</span>
+                                <ul class="footer__second-listSocial">
+                                    <li class="footer__second-item">
+                                        <a href="#">
+                                            <svg width="18" height="11" viewBox="0 0 18 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.8444 7.1C17.3444 8.5 17.6444 9.1 17.6444 9.2C18.2444 10.1 17.0444 10.2 17.1444 10.1H14.7444C14.7444 10.1 14.2444 10.2 13.5444 9.7C12.6444 9.1 11.8444 7.5 11.1444 7.7C10.5444 8 10.5444 9.4 10.5444 9.4C10.5444 9.4 10.6444 9.7 10.4444 9.9C10.2444 10.1 9.94444 10.1 9.94444 10.1H8.84444C8.84444 10.1 6.44444 10.3 4.34444 8.1C2.04444 5.7 0.0444444 1 0.0444444 1C0.0444444 1 -0.0555556 0.6 0.0444444 0.5C0.144444 0.3 0.544444 0.3 0.544444 0.3H3.14444L3.54444 0.5C3.64444 0.6 3.74444 0.8 3.74444 0.8C3.74444 0.8 4.14444 1.8 4.74444 2.8C5.74444 4.7 6.24444 5.1 6.64444 4.9C7.24444 4.6 7.04445 2.3 7.04445 2.3C7.04445 2.3 7.04444 1.5 6.74444 1.1C6.54444 0.8 6.14444 0.7 5.94445 0.7C5.84445 0.7 6.04444 0.4 6.34444 0.2C6.74444 0 7.54445 0 8.54445 0C9.34445 0 9.54444 0 9.84444 0.1C10.7444 0.3 10.4444 1.1 10.4444 3.1C10.4444 3.7 10.2444 4.6 10.7444 4.9C10.9444 5.1 11.4444 4.9 12.6444 2.9C13.2444 1.9 13.6444 0.8 13.6444 0.8C13.6444 0.8 13.7444 0.6 13.8444 0.5C13.9444 0.4 14.1444 0.4 14.1444 0.4H16.8444C16.8444 0.4 17.6444 0.3 17.7444 0.7C17.8444 1.1 17.4444 2 16.3444 3.5C14.5444 5.9 14.3444 5.7 15.8444 7.1Z"
+                                                    fill="white" fill-opacity="0.5" />
+                                            </svg>
+                                        </a>
+                                    </li>
+
+                                    <li class="footer__second-item">
+                                        <a href="">
+                                            <svg width="26" height="23" viewBox="0 0 26 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_d_124_1568)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20.84 0.649696L20.54 0.759696L4.38 6.5797C4.27 6.6197 4.17 6.6897 4.1 6.7897C4.03 6.8897 4 7.0097 4 7.12969C4.01 7.24969 4.05 7.35969 4.13 7.45969C4.21 7.5497 4.31 7.60969 4.43 7.6397L8.61 8.7897L9.39 11.0797L10.17 13.3697C10.21 13.4797 10.29 13.5797 10.38 13.6597C10.47 13.7397 10.58 13.7897 10.7 13.8197C10.82 13.8497 10.94 13.8397 11.06 13.8097C11.18 13.7797 11.28 13.7197 11.37 13.6397L13.53 11.5997L17.77 14.4797C18.29 14.8297 19.03 14.5697 19.16 13.9897L21.97 1.5697C22.11 0.939696 21.47 0.429696 20.84 0.649696ZM18.78 3.4097L11.48 9.37969L11.14 9.6597C11.06 9.7197 11.02 9.8097 11 9.8997L10.92 10.5297L10.71 12.3097C10.71 12.3297 10.71 12.3497 10.69 12.3697C10.68 12.3897 10.66 12.3997 10.63 12.3997C10.61 12.3997 10.59 12.3997 10.57 12.3797C10.55 12.3697 10.54 12.3497 10.54 12.3197L9.95 10.5397L9.34 8.7197C9.31 8.6397 9.32 8.5497 9.35 8.4697C9.38 8.3897 9.44 8.3197 9.52 8.2797L17.12 3.9297L18.55 3.1097C18.75 2.9997 18.96 3.2597 18.78 3.4097Z"
+                                                        fill="white" fill-opacity="0.5" shape-rendering="crispEdges" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_d_124_1568" x="0" y="0.597656" width="25.9893"
+                                                        height="22.0403" filterUnits="userSpaceOnUse"
+                                                        color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                            result="hardAlpha" />
+                                                        <feOffset dy="4" />
+                                                        <feGaussianBlur stdDeviation="2" />
+                                                        <feComposite in2="hardAlpha" operator="out" />
+                                                        <feColorMatrix type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                                            result="effect1_dropShadow_124_1568" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="effect1_dropShadow_124_1568" result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                    </li>
+
+                                    <li class="footer__second-item">
+                                        <a href="#">
+                                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M19 6.80039C19 6.20039 19 5.60039 18.9 4.80039C18.8 4.00039 18.8 3.40039 18.6 3.00039C18.4 2.10039 17.8 1.60039 16.9 1.30039C15.9 1.00039 13.4 0.900391 9.5 0.900391L8 1.00039C6.9 1.00039 5.7 1.00039 4.6 1.10039C3.4 1.20039 2.5 1.20039 2.1 1.40039C1.2 1.60039 0.7 2.20039 0.4 3.10039C0.0999996 4.10039 0 5.60039 0 7.70039V8.50039C0 9.20039 3.7998e-07 9.80039 0.1 10.5004C0.2 11.3004 0.2 11.9004 0.4 12.3004C0.6 13.2004 1.2 13.7004 2.1 14.0004C3.1 14.3004 5.6 14.4004 9.5 14.4004H11C12.1 14.4004 13.3 14.4004 14.4 14.3004C15.6 14.2004 16.5 14.2004 16.9 14.0004C17.8 13.8004 18.3 13.2004 18.5 12.3004C18.8 11.3004 18.9 9.80039 18.9 7.70039L19 6.80039ZM7.6 10.5004V4.80039L12.6 7.70039L7.6 10.5004Z"
+                                                    fill="white" fill-opacity="0.5" />
+                                            </svg>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
