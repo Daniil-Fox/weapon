@@ -1,0 +1,68 @@
+.raptor-modal {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+    background-color: rgba(#000, 0.6);
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity .3s ease-out, z-index .3s ease-out;
+
+    &.active {
+        opacity: 1;
+        z-index: 50;
+    }
+
+    &__window {
+        width: 75%;
+        height: 70%;
+        padding: 50px;
+        background-color: #000;
+        position: relative;
+
+        @media (max-width: 960px) {
+            padding: 30px;
+        }
+
+        @media (max-width: 576px) {
+            height: 90%;
+            width: 90%;
+        }
+    }
+
+    &__video {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+
+        @media (max-width: 960px) {
+            top: 0;
+            right: 0;
+            width: 40px;
+            height: 40px;
+
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            fill: #fff;
+        }
+    }
+}

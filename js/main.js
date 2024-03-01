@@ -26,3 +26,45 @@ new Swiper('.raptor-gallery__slider', {
         clickable: true,
     }
 })
+
+
+const raptorModal = document.querySelector('.raptor-modal')
+const raptorModalBtn = document.querySelector('[data-raptor-video]')
+if(raptorModal){
+    const raptorModalWindow = raptorModal.querySelector('.raptor-modal__window')
+    const raptorModalClose = raptorModal.querySelector('.raptor-modal__close')
+    const video = raptorModal.querySelector('.raptor-modal__video video')
+    const videoPlayBtn = raptorModal.querySelector('.raptor-modal__play')
+    
+    videoPlayBtn.addEventListener('click', e => {
+        e.preventDefault()
+    
+        videoPlayBtn.style.display = 'none'
+        video.play()
+        video.setAttribute('controls', '')
+    })
+    raptorModalBtn.addEventListener('click', e => {
+        e.preventDefault()
+        raptorModal.classList.add('active')
+        document.body.style.overflow = 'hidden'
+    })
+    
+    raptorModal.addEventListener('click', e => {
+        raptorModal.classList.remove('active')
+        videoPlayBtn.style.display = null
+        video.pause()
+        video.removeAttribute('controls', '')
+        document.body.style.overflow = null
+    })
+    raptorModalClose.addEventListener('click', e => {
+        e.preventDefault()
+        raptorModal.classList.remove('active')
+        videoPlayBtn.style.display = null
+        video.pause()
+        video.removeAttribute('controls', '')
+        document.body.style.overflow = null
+    })
+    raptorModalWindow.addEventListener('click', e => {
+        e.stopPropagation()
+    })
+}
