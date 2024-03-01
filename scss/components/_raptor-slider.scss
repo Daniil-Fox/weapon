@@ -46,11 +46,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: calc(100% - 80px);
+        width: 100%;
 
-        @media (max-width: 880px) {
-            width: calc(100% - 40px);
-        }
 
     }
 

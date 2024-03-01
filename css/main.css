@@ -344,12 +344,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: calc(100% - 80px);
-}
-@media (max-width: 880px) {
-  .raptor-slider__control {
-    width: calc(100% - 40px);
-  }
+  width: 100%;
 }
 .raptor-slider__pagination {
   position: relative;
